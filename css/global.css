@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#start_button {
+  width: 104px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  top: 120px;
+  left: -170px;
+  transform: rotate(-40deg);
+  transition: all 0.3s linear;
+  color: white;
+  font-size: 12px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+#stop_button {
+  width: 104px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  top: 70px;
+  left: 170px;
+  transform: rotate(40deg);
+  transition: all 0.3s linear;
+  color: white;
+  font-size: 12px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+#outer_circle {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 505px;
+  height: 505px;
+}
+
+#colored_circle {
+  width: 500px;
+  height: 500px;
+  border: 60px solid black;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+#inner_circle {
+  background-color: black;
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  z-index: 5;
+}
+
+#stopwatch {
+  text-shadow: 0 0 4px white;
+  color: white;
+  font-size: 80px;
+  font-family: 'Iceberg', sans-serif;
+}
