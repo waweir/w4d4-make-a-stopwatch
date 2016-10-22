@@ -25,7 +25,6 @@ function stopwatchCounter() {
     if (tenths <= 9) {
         setTime(minutes, seconds, (tenths + '0'))
     } else if (tenths === 10) {
-        console.log(getComputedStyle(coloredCircle).backgroundColor)
         seconds++
         setTime(minutes, seconds, '00')
         tenths = 0
@@ -33,8 +32,6 @@ function stopwatchCounter() {
         if (coloredCircleCounter > 1) {
             coloredCircleCounter--
             coloredCircle.style.borderWidth = coloredCircleCounter + 'px'
-            console.log(getComputedStyle(coloredCircle).borderWidth)
-            console.log(coloredCircleCounter)
         } else if (coloredCircleCounter === 1) {
             coloredCircle.style.borderWidth = '60px'
             coloredCircleCounter = 60
